@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+   <!-- Compiled and minified JavaScript -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>  
+</head>
+<body>
+
+ <!-- Dropdown Structure -->
+<ul id="dropdown1" class="dropdown-content">
+  <li><a href="/tv-duos" style="font-family:courier; font-size:100%;">TV Duos</a></li>
+  <li class="divider"></li>
+  <li><a href="/movie-duos" style="font-family:courier; font-size:100%;">Movie Duos</a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper black">
+    <a href="/" class="brand-logo" style="font-family:courier; font-size:100%;">My App</a>
+    <ul id"nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="/about-me" style="font-family:courier; font-size:100%;">About Me</a></li>
+      <li><a href="/past-collabs" style="font-family:courier; font-size:100%;">Past Collabs</a></li>
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1" style="font-family:courier; font-size:100%;">More<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+  </div>
+</nav>
+ 
+ 
+     
+     <div class="container">
+         <form action="/" method="POST">
+    <h2 style="font-family:courier; text-align:left;font-size:500%;"> Welcome</h2>
+    <p style="font-family:courier; text-align:left;font-size:200%;"> Enter a list of your favorite artists names', separated by a comma, to get random collaborations. </p>
+    <textarea name="people"></textarea>
+    <button type="submit" class =" btn btn-primary">Submit</button>
+</form>
+</div>
+
+<script>
+    $(".dropdown-trigger").dropdown({hover:false});
+</script>
+</body>
